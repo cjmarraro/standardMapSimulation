@@ -1,1 +1,1 @@
-# standardMapSimulation
+Code and presentation explaining Chirikov standard map
