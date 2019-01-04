@@ -14,7 +14,7 @@
     %Parameters still fast...
     
 %Unstable Manifold Computation Parameters:
-    %Perturb from fixed point along manifild parameter: 
+    %Perturb from fixed point along manifold parameter: 
     mu = 0.0000001
     num_manPoints = 1000            %1200: many folds. 25: begin manifold.  
     num_manIterates = 300          %15 is a good value when epsilon is high.
