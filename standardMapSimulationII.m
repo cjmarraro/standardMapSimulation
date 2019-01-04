@@ -14,22 +14,22 @@
     %Parameters still fast...
     
 %Unstable Manifold Computation Parameters:
-    %berturbe from fixed point along manifild parameter: 
-    %(ur variables are for the upper right hand branch of the manifolds)
+    %Perturb from fixed point along manifild parameter: 
     mu = 0.0000001
     num_manPoints = 1000            %1200: many folds. 25: begin manifold.  
     num_manIterates = 300          %15 is a good value when epsilon is high.
     ur_corner = [2*pi; 2*pi];
 
-    %NOTE:  When epsilon is low takt 'num_manPoints' low (say 100) and 
-    %        'num_manIterates' high (say 50).
-    %       When epsilon is high take 'num_manPoints' high (maybe 600-1000)
-    %       but 'num_manIterates' low (say 10-15).
+    %NOTE:  When epsilon is low: 
+    %       --> lower 'num_manPoints' (say 100)  
+    %       --> raise 'num_manIterates' (say 50).
+    %       When epsilon is high: 
+    %       --> raise 'num_manPoints' (maybe 600-1000)
+    %       --> lower 'num_manIterates' (say 10-15).
     
 
 %Stable Manifold Computation Parameters:
-    %perturbe from fixed point along manifild parameter: 
-    %(ur variables are for the upper right hand branch of the manifolds)
+    %perturb from fixed point along manifold parameter: 
     delta = mu
     num_smanPoints = num_manPoints
     num_smanIterates = num_manIterates
@@ -60,7 +60,7 @@
 %==========================================================================
     
     
-%Compute a course pic of the maps behavior:
+%Compute a course image of the maps behavior:
 this_x = 0.0;
 
 for i = 1:num_x
